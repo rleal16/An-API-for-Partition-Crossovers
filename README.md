@@ -16,7 +16,7 @@ To run the code, it is required:
 
 ## Exhaustive Recombination
 
-Both implementation for MaxSAT and NK Landscapes were tested agains the algorithm in `ExhaustiveRecombination.py`, that searches for the set of optimal solutions from a recombination of two parents.
+Both implementation for MaxSAT and NK Landscapes were tested against the algorithm in `ExhaustiveRecombination.py`, that searches for the set of optimal solutions from a recombination of two parents.
 
 ## MaxSAT
 
