@@ -27,9 +27,9 @@ if __name__ == "__main__":
 
     p1 = np.random.randint(2, size=n)
     p2 = np.random.randint(2, size=n)
-    print("Parent 1 "+str(p1))
-    print("Parent 2 "+str(p2))
+    print("Parent 1: {0} ".format(p1))
+    print("Parent 2: {0} ".format(p2))
     print("\nRecombining...")
     dpx_off = recombine(p1, p2)
-    print("Offspring {0}".format(dpx_off))
+    print("Offspring: {0}".format(dpx_off))
     print("Objective Value: {0}".format(evaluateOffpsring(dpx_off)))
