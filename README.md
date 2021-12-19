@@ -7,7 +7,7 @@ This repository contains the implementation of partition crossovers for the MaxS
 
 In each folder, the recombination algorithm is implemented in `OptimalRecombination.py` and is based on the recombination operator in [2]. It is the same for all problems.
 
-For each problem, the problem dependent implementation is in PX.py. The algorithm in `OptimalRecombination.py` calls methods from this class.
+For each problem, the problem dependent implementation is in `PX.py`. The algorithm in `OptimalRecombination.py` calls methods from this class.
 
 To run the code, it is required:
 
