@@ -26,8 +26,7 @@ To run the partition crossover for the MaxSAT, execute the following command in 
 python main.py <instance>
 ```
 
-The implementation supports file with the same forma as the weighted instances in [https://maxsat-evaluations.github.io](https://maxsat-evaluations.github.io/).
-
+The implementation supports file with the same format as the weighted instances in [https://maxsat-evaluations.github.io](https://maxsat-evaluations.github.io/).
 Two random parents are recombined.
 
 ## NK Landscapes
@@ -39,7 +38,6 @@ python main.py <num. of sub-function> <num. of vars per sub-function> <num. of v
 ```
 
 An instance will be generated where each of the sub-functions has *exactly* the number of variables indicated.
-
 Two random parents are then recombined.
 
 # References
