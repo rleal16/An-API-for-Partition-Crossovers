@@ -1,6 +1,5 @@
 import numpy as np
 import random as rnd
-#from utils import *
 from collections import defaultdict
 
 def getBinaryArray(b, n_bits):

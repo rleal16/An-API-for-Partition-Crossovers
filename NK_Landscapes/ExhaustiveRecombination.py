@@ -63,6 +63,7 @@ def doExhaustiveRecombination(p1, p2):
 
     bestSols = []
     bestVal = -1
+
     # Identify variables with different values in both parents
     diffVars = findDiffVars(p1, p2)
     n = len(diffVars)
@@ -75,7 +76,7 @@ def doExhaustiveRecombination(p1, p2):
         if(objVal > bestVal):
             bestVal = objVal
             bestSols = [sol]
-        elif(objVal == bestVal): # if the new solution (only for variables in diffVars) has the same objective value as the best one found so far, add it to the list of best solutions.
-            bestSols.append(sol)
+        elif(objVal == bestVal):
+            bestSols.append(sol) # add to the list of best solutions (so far)
 
     return createAllOffsprings(p1, diffVars, bestSols) # create a return all the offspring, for all the choices in bestSols

@@ -3,8 +3,8 @@ import nx_junction_tree as nxjt
 import matplotlib.pyplot as plt
 
 class Graph:
-    # V is a sequence of the nodes that belong to a component. By default, we use these vertices to create a complete graph
-    def __init__(self, V=None):
+    
+    def __init__(self):
 
         self.graph = nx.Graph() # the recombination graph
 

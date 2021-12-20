@@ -53,7 +53,7 @@ def getChildConfigFromParent(child_separator, total_vars, total_decisions):
 
     return bin_array
 
-# gets the decisions for each variable
+# Gets the decisions for each variable
 # This function merges the decisions for the separator with the decisions for the residue
 def getFullDecision(separator, x_s, residue, x_r):
 
@@ -103,7 +103,7 @@ def bfsOptimalOffspring(clique, cliques, cliqueExplored, cliqueTree, cliqueConfi
     while(len(queue)>0):
         clique, parent_vars, parent_decisions = queue.pop(0)
 
-        # go through all of this clique's neighbours in the clique tree
+        # go through all of this clique's neighbours, in the clique tree
         for c in list(cliqueTree.neighbors(clique)):
             id = cliqueTree.nodes[c]['id']
             if(not cliqueExplored[id]):
@@ -201,7 +201,7 @@ def getCliqueChildrenEvaluation(aux, total_vars, total_decisions, clique, rec_gr
     return aux
 
 
-# the dynamic programming algorithm the decides how the offspring should be constructed
+# the dynamic programming algorithm that decides how the offspring should be constructed
 
 def doOptimalRecombination(rec_graph):
 
@@ -242,7 +242,7 @@ def doOptimalRecombination(rec_graph):
 
                 aux += getCliqueChildrenEvaluation(aux, total_vars, total_decisions, clique, rec_graph, evaluatedCliques, cliqueConfigs)
 
-                if aux < cliqueConfigs[clique_id].getValue(x_s): # we are minimizing (contrary to the paper)
+                if aux < cliqueConfigs[clique_id].getValue(x_s): # we are minimizing, instead
                     cliqueConfigs[clique_id].setValue(x_s, aux)
                     cliqueConfigs[clique_id].setVariables(x_s, x_r)
 
@@ -253,7 +253,7 @@ def doOptimalRecombination(rec_graph):
     off_decisions, off_variables, off_value = getCompleteDecisions(cliques, cliqueConfigs, clique_tree)
 
 
-    # sort the decision so that they are arranged in increasing order according to the associated component (variable).
+    # sort the decisions so that they are arranged in increasing order according to the associated component (variable).
     # In t, each position represents a component and its value is the associated parent choice.
     t = [-1]*len(off_variables)
     for i in range(len(off_variables)):

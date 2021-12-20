@@ -28,7 +28,7 @@ class CliqueConfiguration:
         self.value[sep] = val
 
     # Assign binary choices for the residue, in x_r, to a given set o binary choices in the separator x_s
-    # Note: self.variables and self.value should match. Where sep = x_s and the value must correspond to objective value of x_s with x_r
+    # Note: self.variables and self.value match. Where sep = x_s and the value must correspond to objective value of x_s with x_r
     def setVariables(self, x_s, x_r):
         self.variables[x_s] = x_r
 
