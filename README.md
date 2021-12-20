@@ -31,7 +31,7 @@ Two random parents are recombined.
 
 ## NK Landscapes
 
-To run the partition crossover of the NK Landscapes, the number of sub-function, the number of variables for each function, and the total number of variables must be provided. To this end, run the following command on the terminal:
+To run the partition crossover of the NK Landscapes, the number of sub-function, the number of variables for each function, and the total number of variables must be provided. Execute the following command in the terminal:
 
 ```bash
 python main.py <num. of sub-function> <num. of vars per sub-function> <num. of variables>
