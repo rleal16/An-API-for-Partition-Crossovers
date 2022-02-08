@@ -42,6 +42,6 @@ Two random parents are then recombined.
 
 # References
 
-[1] Rúben Leal. Developing Partition Crossovers for Combinatorial Optimisation Problems. Master’s Thesis, University of Coimbra, Portugal. 2021 Link: http://hdl.handle.net/10316/97923
+[1] Rúben Leal. Developing Partition Crossovers for Combinatorial Optimisation Problems. Master’s Thesis, University of Coimbra, Portugal. 2021. Link: http://hdl.handle.net/10316/97923
 
 [2] F. Chicano, G. Ochoa, D. Whitley, and R. Tinós. Quasi-Optimal Recombination Operator. In A. Liefooghe and L. Paquete, editors, Evolutionary Computation in Combinatorial Optimization, volume 11452, pages 131–146. Springer International Publishing, Cham, 2019. Series Title: Lecture Notes in Computer Science.
